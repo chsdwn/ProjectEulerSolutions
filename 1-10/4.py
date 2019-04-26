@@ -7,7 +7,7 @@ def ReverseList(givenList):
     for i in range(len(givenList)):
         reversedList.append("0")
 
-    count = 2
+    count = len(givenList) - 1
     for j in range(len(givenList)):
         reversedList[count] = givenList[j]
         count -= 1
