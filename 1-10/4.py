@@ -34,8 +34,8 @@ def CheckTheNumberIsPalindrome(number):
 
 def CalculatePalindromeNumber():
     biggestPalindrome = 0
-    for i in range(10):
-        for j in range(10):
+    for i in range(100):
+        for j in range(100):
             number = (biggest3DigitNumber - i) * (biggest3DigitNumber - j)
 
             if(CheckTheNumberIsPalindrome(number)):
