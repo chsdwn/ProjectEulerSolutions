@@ -39,7 +39,7 @@ def CalculatePalindromeNumber():
             number = (biggest3DigitNumber - i) * (biggest3DigitNumber - j)
 
             if(CheckTheNumberIsPalindrome(number)):
-                print("Sayı: {} * {} = {}".format(biggest3DigitNumber, (biggest3DigitNumber - i), number))
+                print("{} = {} * {}".format(number, (biggest3DigitNumber - i), (biggest3DigitNumber - j)))
                 if(biggestPalindrome < number):
                     biggestPalindrome = number
     
