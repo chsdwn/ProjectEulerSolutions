@@ -28,13 +28,12 @@ def numberIsEven(number):
         
         if number % 2 == 0:
             if number < index:
-                item[len(item) - 1] += lengthList[number][1] - 1
+                item[len(item) - 1] += lengthList[number][1] - 1 # Minus one cause number itselft counts two times.
                 number = 1
                 return
             numberIsEven(number)
         else:
-            numberIsOdd(number)
-        
+            numberIsOdd(number)    
     return
 
 def numberIsOdd(number):
